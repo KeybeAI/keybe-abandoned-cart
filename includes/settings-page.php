@@ -36,22 +36,27 @@ function keybe_settings_section_callback(  ) {
 }
 
 function keybe_app_id(){
-	$options = get_option( 'keybe_settings' ); ?>
-	<input type='text' name='keybe_settings[keybe_app_id]' value='<?php echo $options["keybe_app_id"]; ?>'> <?php
+	$options = get_option( 'keybe_settings' ); 
+	$app_id = $options["keybe_app_id"];
+
+	echo __("<input type='text' name='keybe_settings[keybe_app_id]' value='$app_id'>");
 }
 function keybe_company_id(){
-	$options = get_option( 'keybe_settings' ); ?>
-	<input type='text' name='keybe_settings[keybe_company_id]' value='<?php echo $options["keybe_company_id"]; ?>'> <?php
+	$options = get_option( 'keybe_settings' ); 
+	$company_id = $options["keybe_company_id"];
+	echo __("<input type='text' name='keybe_settings[keybe_company_id]' value='$company_id'>");
 }
 
 function keybe_api_key(){
-	$options = get_option( 'keybe_settings' ); ?>
-	<input type='text' name='keybe_settings[keybe_api_key]' value='<?php echo $options["keybe_api_key"]; ?>'> <?php
+	$options = get_option( 'keybe_settings' ); 
+	$api_key = $options["keybe_api_key"];
+	echo __("<input type='text' name='keybe_settings[keybe_api_key]' value='$api_key'>");
 }
 
 function keybe_country_code(){
-	$options = get_option( 'keybe_settings' ); ?>
-	<input type='text' name='keybe_settings[keybe_country_code]' value='<?php echo $options["keybe_country_code"]; ?>'> <p style="font-size: 11px; max-width: 200px">Include the country code with + example: +57 <br> Check the list <a href="https://en.wikipedia.org/wiki/List_of_country_calling_codes" target="_blank">Here!</a></p> <?php
+	$options = get_option( 'keybe_settings' ); 
+	$country_code = $options["keybe_country_code"];
+	echo __("<input type='text' name='keybe_settings[keybe_country_code]' value='$country_code'> <p style='font-size: 11px; max-width: 200px'>Include the country code with + example: +57 <br> Check the list <a href='https://en.wikipedia.org/wiki/List_of_country_calling_codes' target='_blank'>Here!</a></p>");
 }
 
 function keybe_plugin_function(){ ?>
