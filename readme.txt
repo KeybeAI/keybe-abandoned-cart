@@ -24,3 +24,5 @@ Keybe get the customer information on your website and send it to your Keybe acc
 What is Keybe?
 
 Keybe is a smart chat. It allows you to have a chat with your customers in WhatsApp, Facebook Messenger, Instagram, Telegram, and more. It also allows you to have a chat with your customers in your website.
+
+You can find the legal terms and conditions here: https://keybe.ai/legales
